@@ -1,20 +1,15 @@
 import React from 'react';
-import './App.css'
-import NewComp from './Component/newComp'
- class App extends React.Component {
-  styles={
-    fontStyle:"bold",
-    color:"teal"
-    };
-  render() {
-    return (
-      <div className='App'>
-        <h1 style={this.styles}>Welcome Bro</h1>
-        <NewComp />
-      </div>
+import './App.css';
+import LoginPage from './Components/LoginPage/LoginPage';
+import Home from './Components/HomePage/Home';
 
-    );
-  }
+function App() {
+  return (
+    <div className="App">
+     {/*   <LoginPage/>   */}
+      <Home/>
+    </div>
+  );
 }
 
-export default App
+export default App;
